@@ -1,13 +1,6 @@
-# 鬱陶しいFutureWarningを無視
-from warnings import simplefilter
-simplefilter(action='ignore', category=FutureWarning)
+from main import mglearn, np, plt, train_test_split
 
-from sklearn.datasets import load_breast_cancer
-import pandas as pd
-import numpy as np
-import mglearn
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
+# モデル読み込み
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neighbors import KNeighborsRegressor
 
